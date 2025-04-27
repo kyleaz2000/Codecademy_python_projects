@@ -1,0 +1,42 @@
+#Module 6 training assignment. Set weight equal to the package weight
+
+
+
+weight = 41.50
+
+
+#ground shipping
+
+if weight <= 2.00:
+    cost_ground = weight * 1.50 + 20.00
+elif weight <=6.00:
+    cost_ground = weight * 3.00 + 20.00
+elif weight <=10.00:
+    cost_ground = weight * 4.00 + 20.00
+else:
+    cost_ground = weight * 4.75 + 20.00
+
+print("Ground Shipping = $",cost_ground)
+
+
+#premium ground shipping
+
+cost_premium_ground = 125.00
+
+print("Premium Ground Shipping = $",cost_premium_ground)
+
+
+#drone shipping
+
+if weight <= 2.0:
+    cost_drone_shipping = weight * 4.50
+elif weight >= 6.0:
+    cost_drone_shipping = weight * 9.00
+elif weight >= 10.0:
+    cost_drone_shipping = weight * 12.00
+else:
+    cost_drone_shipping = weight * 14.25
+
+print("Drone Shipping = $",cost_drone_shipping)
+
+
